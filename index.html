@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Шестерня — автосервис</title>
+  <meta name="description" content="Шестерня — автосервис полного цикла. Концепт сайта от lovlyDev." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2315171a'/%3E%3Ccircle cx='32' cy='32' r='14' fill='none' stroke='%23f5c518' stroke-width='8' stroke-dasharray='6 5'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%23f5c518'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topline">
+    <div class="wrap">
+      <span><b class="live" id="live"></b><span id="openText">Ежедневно 8:00 — 21:00</span></span>
+      <a href="tel:+70000000000">+7 000 000-00-00</a>
+    </div>
+  </div>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="logo"><span class="gear"></span>Шестерня</a>
+      <nav>
+        <a href="#services">Услуги</a>
+        <a href="#prices">Цены</a>
+        <a href="#why">Почему мы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <a href="#book" class="btn btn-yellow">Записаться</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <picture class="hero-bg"><source srcset="img/hero.avif" type="image/avif" /><img src="img/hero.webp" alt="Мастер осматривает двигатель" /></picture>
+      <div class="wrap hero-inner">
+        <p class="badge">Автосервис полного цикла</p>
+        <h1>Ремонт, <span>который не&nbsp;придётся переделывать</span></h1>
+        <p class="lead">Диагностика, ТО, ходовая, двигатель и шиномонтаж. Согласуем цену до начала работ и даём гарантию 12 месяцев.</p>
+        <div class="hero-cta">
+          <a href="#book" class="btn btn-yellow">Записаться на ремонт</a>
+          <a href="#prices" class="btn btn-ghost">Узнать цены</a>
+        </div>
+        <ul class="hero-stats">
+          <li><strong>12</strong><span>постов</span></li>
+          <li><strong>12 мес.</strong><span>гарантия на работы</span></li>
+          <li><strong>30 мин</strong><span>бесплатная диагностика</span></li>
+        </ul>
+      </div>
+      <div class="hazard" aria-hidden="true"></div>
+    </section>
+
+    <section class="services wrap" id="services">
+      <div class="head reveal">
+        <h2>Что ремонтируем</h2>
+        <p>Работаем с легковыми автомобилями, кроссоверами и коммерческим транспортом до 3,5 т.</p>
+      </div>
+      <div class="svc-grid">
+        <article class="svc reveal"><span class="num">01</span><h3>Диагностика</h3><p>Компьютерная и ходовой. Расскажем, что срочно, а что может подождать.</p></article>
+        <article class="svc reveal"><span class="num">02</span><h3>ТО и масло</h3><p>Замена масла, фильтров, свечей и жидкостей по регламенту производителя.</p></article>
+        <article class="svc reveal"><span class="num">03</span><h3>Ходовая</h3><p>Подвеска, рулевое, тормоза. Развал-схождение на 3D-стенде.</p></article>
+        <article class="svc reveal"><span class="num">04</span><h3>Двигатель</h3><p>Ремонт ГРМ, капремонт, устранение течей и посторонних шумов.</p></article>
+        <article class="svc reveal"><span class="num">05</span><h3>Электрика</h3><p>Стартеры, генераторы, проводка, установка сигнализаций.</p></article>
+        <article class="svc reveal"><span class="num">06</span><h3>Шиномонтаж</h3><p>Сезонная смена шин, балансировка и хранение колёс.</p></article>
+      </div>
+    </section>
+
+    <section class="prices" id="prices">
+      <div class="wrap prices-inner">
+        <div class="prices-text reveal">
+          <h2>Цены без сюрпризов</h2>
+          <p>Выберите тип автомобиля — покажем стоимость работ. Запчасти можно привезти свои или купить у нас со скидкой.</p>
+          <div class="classes" role="tablist">
+            <button role="tab" aria-selected="true" data-k="1">Легковой</button>
+            <button role="tab" aria-selected="false" data-k="1.25">Кроссовер</button>
+            <button role="tab" aria-selected="false" data-k="1.5">Внедорожник</button>
+          </div>
+          <picture class="prices-photo"><source srcset="img/lift.avif" type="image/avif" /><img src="img/lift.webp" alt="Автомобиль на подъёмнике" loading="lazy" /></picture>
+        </div>
+        <ul class="price-list reveal" id="priceList">
+          <li data-p="0"><span>Компьютерная диагностика</span><b>бесплатно</b></li>
+          <li data-p="900"><span>Замена масла и фильтра</span><b></b></li>
+          <li data-p="1500"><span>Развал-схождение 3D</span><b></b></li>
+          <li data-p="1200"><span>Замена тормозных колодок (ось)</span><b></b></li>
+          <li data-p="2400"><span>Замена амортизаторов (пара)</span><b></b></li>
+          <li data-p="6500"><span>Замена ремня ГРМ</span><b></b></li>
+          <li data-p="1800"><span>Шиномонтаж 4 колеса</span><b></b></li>
+          <li data-p="2200"><span>Заправка кондиционера</span><b></b></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="why wrap" id="why">
+      <div class="why-media reveal">
+        <picture><source srcset="img/engine.avif" type="image/avif" /><img src="img/engine.webp" alt="Ремонт двигателя" loading="lazy" /></picture>
+        <picture><source srcset="img/hands.avif" type="image/avif" /><img src="img/hands.webp" alt="Мастер с ключом" loading="lazy" /></picture>
+      </div>
+      <div class="why-text reveal">
+        <h2>Почему к нам возвращаются</h2>
+        <ul class="checks">
+          <li><b>Цена фиксируется заранее.</b> Если в процессе найдём ещё что-то — сначала позвоним и спросим.</li>
+          <li><b>Показываем старые детали.</b> Всё, что заменили, отдаём вам или показываем фото.</li>
+          <li><b>Можно смотреть ремонт.</b> Зона ожидания с окном в цех, кофе и Wi-Fi.</li>
+          <li><b>Гарантия 12 месяцев</b> на работы и 6 месяцев на наши запчасти.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="book" id="book">
+      <div class="wrap book-inner">
+        <div class="reveal">
+          <h2>Записаться на ремонт</h2>
+          <p>Оставьте заявку — перезвоним в течение 15 минут в рабочее время и подберём удобное окно.</p>
+          <picture class="book-photo"><source srcset="img/tools.avif" type="image/avif" /><img src="img/tools.webp" alt="Инструменты" loading="lazy" /></picture>
+        </div>
+        <form class="form reveal" id="form">
+          <label>Марка и модель<input required placeholder="Например, Kia Rio 2019" /></label>
+          <label>Что нужно сделать
+            <select><option>Диагностика</option><option>ТО и замена масла</option><option>Ходовая и тормоза</option><option>Двигатель</option><option>Электрика</option><option>Шиномонтаж</option><option>Не знаю — нужна консультация</option></select>
+          </label>
+          <div class="row">
+            <label>Имя<input required placeholder="Как к вам обращаться" /></label>
+            <label>Телефон<input required type="tel" placeholder="+7" /></label>
+          </div>
+          <button class="btn btn-yellow" type="submit">Отправить заявку</button>
+          <p class="note" id="note" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="contacts wrap" id="contacts">
+      <div class="reveal">
+        <h2>Как доехать</h2>
+        <dl>
+          <div><dt>Адрес</dt><dd>ул. Промышленная, 7, бокс 3</dd></div>
+          <div><dt>Часы</dt><dd>Ежедневно 8:00 — 21:00</dd></div>
+          <div><dt>Телефон</dt><dd>+7 000 000-00-00</dd></div>
+        </dl>
+      </div>
+      <div class="map reveal" aria-hidden="true">
+        <svg viewBox="0 0 400 260">
+          <rect width="400" height="260" fill="#1d2024" />
+          <path d="M0 170 L400 120" stroke="#2c3036" stroke-width="28" /><path d="M120 0 L170 260" stroke="#2c3036" stroke-width="20" />
+          <path d="M0 60 L400 80" stroke="#2c3036" stroke-width="12" /><path d="M300 0 L320 260" stroke="#2c3036" stroke-width="12" />
+          <rect x="200" y="160" width="80" height="54" rx="4" fill="#262a30" /><rect x="20" y="90" width="80" height="50" rx="4" fill="#262a30" />
+          <circle cx="240" cy="140" r="34" fill="#f5c518" opacity=".15" />
+          <path d="M240 110c-11 0-19 8-19 18 0 14 19 32 19 32s19-18 19-32c0-10-8-18-19-18z" fill="#f5c518" /><circle cx="240" cy="128" r="6" fill="#15171a" />
+        </svg>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <span class="logo"><span class="gear"></span>Шестерня</span>
+    <p>Концепт сайта для портфолио. Название, адрес и телефон вымышлены. Фото — Unsplash.</p>
+    <a href="https://lovlydev.github.io" target="_blank" rel="noreferrer">Сделано lovlyDev ↗</a>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && (e.target.classList.add('in'), io.unobserve(e.target))), { threshold: .15 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    // open/closed badge by Moscow time (opening hours 8:00–21:00)
+    const mskHour = +new Intl.DateTimeFormat('ru-RU', { hour: 'numeric', hourCycle: 'h23', timeZone: 'Europe/Moscow' }).format(new Date());
+    const open = mskHour >= 8 && mskHour < 21;
+    document.getElementById('openText').textContent = (open ? 'Сейчас открыто' : 'Сейчас закрыто') + ' · ежедневно 8:00 — 21:00';
+    if (!open) document.getElementById('live').classList.add('off');
+
+    // prices scale with the car class; rounded to 50 ₽
+    const fmt = n => n.toLocaleString('ru-RU') + ' ₽';
+    const setClass = k => document.querySelectorAll('#priceList li').forEach(li => {
+      const p = +li.dataset.p; if (!p) return;
+      const b = li.querySelector('b'); b.textContent = 'от ' + fmt(Math.round(p * k / 50) * 50);
+      b.classList.remove('flash'); void b.offsetWidth; b.classList.add('flash');
+    });
+    document.querySelectorAll('[data-k]').forEach(btn => btn.addEventListener('click', () => {
+      document.querySelectorAll('[data-k]').forEach(b => b.setAttribute('aria-selected', b === btn));
+      setClass(+btn.dataset.k);
+    }));
+    setClass(1);
+
+    document.getElementById('form').addEventListener('submit', e => {
+      e.preventDefault();
+      document.getElementById('note').textContent = 'Это концепт сайта — заявка никуда не отправляется.';
+    });
+  </script>
+</body>
+</html>
